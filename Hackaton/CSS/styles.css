@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: beige;
+  font-family: 'Mukta', sans-serif;
+  height: 100%;
+}
+
+header {
+  /* display: block; */
+  text-align: center;
+  position: relative;
+}
+
+header a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+footer a {
+  color: inherit;
+}
+
+#Home main {
+  position: relative;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+main img {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+}
+
+.beerlist table, tr, td {
+  border: 1px solid black;
+}
+
+.beertypes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.aboutpage {
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (min-width:768px) {
+  .beertypes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #contactform {
+    text-align: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .beertypes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}

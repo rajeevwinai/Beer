@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>All about beer</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="parent">
+    <header>
+      <nav>
+
+        <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="beers.html">Beers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contactform">
+      <form name="contact" method="POST" data-netlify="true">
+          <div>
+        <table class="contactinfo">
+          <tr>
+            <td><label>Name:</label></td>
+            <td><input type="text" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label>Phone:</label></td>
+            <td><input type="tel" name="phone" /></td>
+          </tr>
+          <tr>
+            <td><label>Age:</label></td>
+            <td><input type="number" name="age" min="1" max="200" /></td>
+          </tr>
+          <tr>
+            <td><label>Date of Birth:</label></td>
+            <td><input type="date" name="date" min="1900-06-10" /></td>
+          </tr>
+        </table>
+
+        <hr />
+
+        <div>
+          Gender:
+          <div>
+            <input type="radio" name="gender" value="male" />
+            <label>Male</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" value="female" />
+            <label>Female</label>
+          </div>
+        </div>
+        <hr />
+        <div>
+          Favorite Beer:
+          <div>
+            <input type="checkbox" name="italian" />
+            <label>Pils</label>
+          </div>
+          <div>
+            <input type="checkbox" name="french" />
+            <label>Lager</label>
+          </div>
+          <div>
+            <input type="checkbox" name="spanish" />
+            <label>Malt</label></label>
+          </div>
+          <div>
+            <input type="checkbox" name="arabic" />
+            <label>Witbier</label>
+          </div>
+          <div>
+            <input type="checkbox" name="arabic" />
+            <label>Fruitbier</label>
+          </div>
+          <div>
+            <input type="checkbox" name="arabic" />
+            <label>Blond</label>
+          </div>
+          <div>
+            <input type="checkbox" name="arabic" />
+            <label>Weizen</label>
+          </div>
+          <div>
+            <input type="checkbox" name="arabic" />
+            <label>IPA</label>
+          </div>
+          <div>
+            <input type="checkbox" name="arabic" />
+            <label>Bock</label>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <label>Favorite color of Beer:</label> <br>
+          <input type="color" name="color" />
+        </div>
+        <hr />
+        <div>
+          <label>Bio</label> <br>
+          <textarea name="bio">Tell us about yourself!</textarea>
+        </div>
+        <input type="hidden" name="hidden" value="hi" />
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      This website is created by <a href="https://www.instagram.com/rajeevwinai/">Rajeev Singh</a> .
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
